@@ -1,16 +1,11 @@
 import express from 'express';
-import { getAllApprenant,
-         getApprenantsById,
-         createApprenant,
-         updateApprenant,       
-
-} from '../controllers/apprenantController.js';
+import { getAllApprenant, getApprenantById, createApprenant, updateApprenant, deleteApprenant } from '../Controllers/apprenantController.js';
 const router = express.Router();
 
 //routes pour recuper tous les apprenants
 router.get('/', getAllApprenant);
 //routes pour recuper un apprenant par son id
-router.get('/:id', getApprenantsById);
+router.get('/:id', getApprenantById);
 //routes pour creer un apprenant
 router.post('/', createApprenant);
 //routes pour modifier un apprenant
