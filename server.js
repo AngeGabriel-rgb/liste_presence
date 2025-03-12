@@ -11,7 +11,7 @@ app.get('/', async (req, res) => {
 });
 
  // Utiliser les routes
-router.use('/apprenants', router);
+app.use('/apprenants', router);
 
 // Démarrer le serveur
 const PORT = process.env.PORT || 3000;
