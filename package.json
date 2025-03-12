@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "type": "module",
-  "scripts": {
+"scripts": {
+  "build": "your-build-command",
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
