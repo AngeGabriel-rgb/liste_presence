@@ -1,6 +1,6 @@
 import express from 'express'; // Importer les routes
 import { PrismaClient } from '@prisma/client'; // Importer PrismaClient
-import {router} from './routes/apprenantRoutes.js'; // Importer les routes
+import router from './routes/apprenantRoutes.js'; // Importer les routes
 const app = express();
 const prisma = new PrismaClient();
 
